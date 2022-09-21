@@ -30,6 +30,7 @@
 
 
 
+
 /*********************************************header*********************************/
 
 .topbar_contactInfo,.topbar_socialLink {
@@ -786,7 +787,7 @@ ul.topbar_socialLink i {
 
 .gallery-filter.dark li a, .filter-cat li a{
     /* padding-left: 25px; */
-    color: #fff !important;
+    color: #000 !important;
     font-size: 18px;
     font-family: "Roboto Slab";
     text-transform: uppercase;
@@ -815,27 +816,68 @@ ul.topbar_socialLink i {
 
 
 .footer-widget{
-    background: #c51931 !important;
+    background: url(../img/diagonal.png);
+    background-color: #2c2c2c;
+    padding-bottom: 40px !important;
+    position: relative;
+    margin-top: 100px;
+}
+.footer-widget::before {
+    content: "";
+    position: absolute;
+    top: -46px;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    background: url(../img/lines2.jpg);
+    height: 50px;
+}
+.footer-widget .footer-item > img{
+    width: 140px;
 }
 .contact-info li i {
     color: #fff;
 }
 footer.footer {
-    background: linear-gradient(180deg, #6f0c1a 0%, #901121 50%, #6f0c1a 100%);
+    background: #000;
+    padding: 10px 0px;
+    margin: 0px 0px 0px;
 }
 .footer #social a{
     color: #fff !important  ;
     background: none;
 }
 
+body .footer-item h4{
 
-
-
-
-#slider.sitemessage {
-    background: linear-gradient(180deg, #6f0c1a 0%, #901121 50%, #6f0c1a 100%);
+    color: #fff !important;
+}
+.contact-info li span, .footer-item p {
+    color: #fff !important;
+}
+footer.footer {
+}
+.footer .copyright{
+    color: #fff !important;
 }
 
+#slider.sitemessage {
+    background: #6a6a6a !important;
+    color: #fff !important;
+}
+#slider.sitemessage p {
+    color: #fff !important;
+}
+.sidebar .newsletter {
+    background: #f5f5f5;
+}
+.sidebar .newsletter .label {
+    padding: 10px !important;
+    display: block;
+    background: #c51931;
+}
 
 
 /********************* product grid redesign **************/
@@ -883,12 +925,13 @@ footer.footer {
     font-size: 21px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    margin: 10px 0;
+    margin: 20px 0 0;
     text-transform: uppercase;
-    color: #fff !important;
+    color: #fff;
+    display: block;
 }
 .frontinfo .amount {
-    color: #931122 !important;
+    color: #000 !important;
     font-weight: bold;
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
@@ -1011,6 +1054,83 @@ span.posted_in a,
 .overview-tab li a  {
     color:  #931122 !important;
 }
-.social-share-icons li a i{
+
+
+/******************* light theme color ********************/
+html body{
+    background: none;
+}
+h1, h2, h3, h4, h5, h6, p, .section-head h2,
+#homeshop h2, #bottomblockhead h2{
+    color: #000 !important;
+}
+.footer-item a:hover{
     color: #fff !important;
 }
+.para1 h2, .para1 h3, .para1 p {
+    color: #fff !important;
+}
+
+
+.address li, .address li a {
+    color: #000 !important;
+}
+div#calendar_grid_view > div.row > div:nth-child(2) .subhead {
+    color: #000 !important;
+}
+span.current-price, div#storecat h2 > a,
+.product-rating,
+.choosedate,
+.product_meta > span{
+    color: #000 !important;
+}
+.social-share-icons li a{
+    border-color: c51931 !important;
+}
+.social-share-icons li a i{
+    color: #c51931 !important;
+}
+.overview-tab li.active a{
+    color: #000 !important;
+}
+.product-_-overview ul {
+    color: #000 !important;
+}
+hr{
+    border-color: #ddd;
+}
+
+
+
+
+.sbHolder .sbSelector {
+    background: no-repeat;
+    border: 1px solid #ddd;
+}
+.cartWidget {
+    background: none;
+    color: #000 !important;
+}
+.frontinfo h4 a,
+.product_list_widget .pdDesc a{
+    color: #000 !important;
+}
+.sbHolder .sbSelector {
+    background: no-repeat;
+    border: 1px solid #ddd;
+    color: #777 !important;
+}
+
+
+
+p.itemrow-all-data,
+.course p.itemrow-all-data{
+    background: #f1f1f1;
+}
+.travel-wrapper .text-box{
+    background: #f1f1f1 !important;
+}
+#go-top{
+    background: #000 !important;
+}
+/*********************/
